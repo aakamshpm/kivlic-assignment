@@ -1,0 +1,213 @@
+.kivlic__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.kivlic__form-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kivlic__form-title h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.035em;
+    color: #20404A;
+
+    margin-top: 1rem;
+}
+
+.kivlic__form-title h2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.035em;
+    color: #20404A;
+}
+
+.kivlic__form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kivlic__form-body_title {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 6rem;
+}
+
+.kivlic__form-body_title h3  {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.035em;
+    color: #20404A;
+}
+
+.kivlic__form-body_title p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.035em;
+    color: #20404A;
+}
+
+.kivlic__form-body_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 3rem;
+}
+
+.kivlic__form-body_container-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.kivlic__form-body_container-field p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.035em;
+    color: #20404A;
+}
+
+.kivlic__form-body_container-field input {
+    border: 1px solid #707070;
+    border-radius: 13px;
+    width: 400px;
+    height: 50px;
+    margin-top: 1rem;
+    font-size: 18px;
+
+    padding: 1rem;
+}
+
+.kivlic__form-body_container-field button {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 60px;
+    letter-spacing: 0.035em;
+    color: #20404A;
+
+    border: 1px solid #707070;
+    border-radius: 13px;
+    width: 400px;
+    height: 60px;
+
+    margin-top: 1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.kivlic__form-body_container-field_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kivlic__form-body_container-field_button img {
+    width: 32px;
+    height: 35px;
+}
+
+
+.kivlic__form-body_container-submit button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #04A8E8;
+    width: 210px;
+    height: 70px;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#kivlic__form-email {
+    min-width: 90%
+}
+
+#kivlic__form-telephone {
+    margin-top: 1rem;
+}
+
+#kivlic__form-upload {
+    min-width: 90%;
+}
+
+@media screen and (max-width: 1000px) {
+    .kivlic__form-title {
+        padding-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .kivlic__form-title h1 {
+        font-size: 35px;
+    }
+
+    .kivlic__form-title h2 {
+        font-size: 25px;
+    }
+
+    .kivlic__form-body_title h2 {
+        font-size: 27px;
+    }
+
+    .kivlic__form-body_title p {
+        font-size: 17px;
+    }
+
+    .kivlic__form-body_container-field p {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .kivlic__form-body_container-field input {
+        width: 330px;
+    }
+    
+    .kivlic__form-body_container-field button {
+        width: 330px;
+        font-size: 18px;
+    }
+
+    .kivlic__form-body_container-field_button img {
+        width: 26px;
+        height: 28px;
+    }
+
+    .kivlic__form-body_container-submit button {
+        width: 190px;
+        height: 50px;
+
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,138 @@
+.kivlic__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.kivlic__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    width: '100%';
+}
+
+.kivlic__navbar-logo img {
+    max-width: 240px;
+}
+
+.kivlic__navbar-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.kivlic__navbar-links p {
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.kivlic__navbar-links p:first-child {
+    font-weight: 900;
+}
+
+.kivlic__navbar-login {
+    display: flex;
+    flex-direction: row;
+}
+
+.kivlic__navbar-login p {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.kivlic__navbar-login p:last-child {
+    margin-right: 0;
+}
+
+.kivlic__navbar-menu {
+    display: none;
+}
+
+.kivlic__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: end;
+    background: #02A4EF;
+    padding: 2rem;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    margin-top: 1rem;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0 ,0, 0.2);
+}
+
+.kivlic__navbar-menu_container-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kivlic__navbar-menu_container-links p {
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 40px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+.kivlic__navbar-menu_container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kivlic__navbar-menu_container-login p {
+    display: none;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+    .kivlic__navbar-links {
+        display: none;
+    }
+    .kivlic__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .kivlic__navbar {
+        padding: 2rem;
+    }
+
+    .kivlic__navbar-login {
+        display: none;
+    }
+
+    .kivlic__navbar-menu_container-login p {
+        display: block;
+    }
+}

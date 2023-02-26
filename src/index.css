@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Manrope:wght@200;300;400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Island+Moments&family=Manrope:wght@200;300;400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --font-family : 'Open Sans', sans-serif;
+    --gradient-bar: linear-gradient(90deg, #02A4EF 0%, #20DF95 100%);
+    --text-color: '#20404a'
+}
+
+.section__padding {
+    padding: 4rem 6rem;
+}
+
+
+@media screen and (max-width: 700px) {
+    .section__padding{
+        padding: 4rem;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .section__padding{
+        padding: 4rem 2rem;
+    }
+  }  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
